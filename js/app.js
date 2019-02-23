@@ -32,6 +32,18 @@ const createDataListItem = function (form) {
   email.textContent = `Email: ${form.email.value}`;
   dataListItem.appendChild(email);
 
+// Extensions
+
+  const phone = document.createElement('p');
+  phone.textContent = `Email: ${form.phone.value}`;
+  dataListItem.appendChild(phone);
+
+  // const preferredContact = document.createElement('p');
+  // preferredContact.textContent = `Preferred contact: ${form.preferredContact.value}`;
+  // dataListItem.appendChild(preferredContact);
+
+//
+
   return dataListItem;
 }
 
