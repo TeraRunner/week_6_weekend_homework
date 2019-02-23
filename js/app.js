@@ -21,15 +21,15 @@ const createDataListItem = function (form) {
   dataListItem.classList.add('data-list-item');
 
   const f_name = document.createElement('p');
-  f_name.textContent = form.f_name.value;
+  f_name.textContent = `First name: ${form.f_name.value}`;
   dataListItem.appendChild(f_name);
 
   const l_name = document.createElement('p');
-  l_name.textContent = form.l_name.value;
+  l_name.textContent = `Last name: ${form.l_name.value}`;
   dataListItem.appendChild(l_name);
 
   const email = document.createElement('p');
-  email.textContent = form.email.value;
+  email.textContent = `Email: ${form.email.value}`;
   dataListItem.appendChild(email);
 
   return dataListItem;
